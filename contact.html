@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-size: 14px;
+    }
+    .page {
+      width: 430px;
+      height: 932px;
+      background: rgba(255, 255, 255, 1);
+      opacity: 1;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .barra {
+      width: 430px;
+      height: 91px;
+      background: url("img/barra.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .inicio {
+      width: 62px;
+      color: rgba(255, 255, 255, 1);
+      position: absolute;
+      top: 32px;
+      left: 88px;
+      font-family: Inter;
+      font-weight: Black;
+      font-size: 18px;
+      opacity: 1;
+      text-align: center;
+    }
+    .contact {
+      width: 146px;
+      color: rgba(255, 255, 255, 1);
+      position: absolute;
+      top: 32px;
+      left: 280px;
+      font-family: Inter;
+      font-weight: Black;
+      font-size: 18px;
+      opacity: 1;
+      text-align: center;
+    }
+    .prod {
+      width: 132px;
+      color: rgba(255, 255, 255, 1);
+      position: absolute;
+      top: 32px;
+      left: 155px;
+      font-family: Inter;
+      font-weight: Black;
+      font-size: 18px;
+      opacity: 1;
+      text-align: center;
+    }
+    .bg {
+      width: 430px;
+      height: 919px;
+      background: url("img/fondo.jpeg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 87px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .tit {
+      width: 343px;
+      color: rgba(0, 144, 39, 1);
+      position: absolute;
+      top: 114px;
+      left: 44px;
+      font-family: Inter;
+      font-weight: Black;
+      font-size: 40px;
+      opacity: 1;
+      text-align: center;
+    }
+    .logo {
+      width: 69px;
+      height: 69px;
+      background: url("img/logo.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 8px;
+      left: 5px;
+      border-top-left-radius: 107px;
+      border-top-right-radius: 107px;
+      border-bottom-left-radius: 107px;
+      border-bottom-right-radius: 107px;
+      overflow: hidden;
+    }
+    .form-section {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: colum;
+      justify-content: center;
+    }
+    .form-register {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: colum;
+      justify-content: center;
+    }
+    .box4 {
+      width: 304px;
+      height: 54px;
+      background: rgba(215, 238, 212, 1);
+      opacity: 1;
+      position: absolute;
+      top: 450px;
+      left: 64px;
+      overflow: hidden;
+    }
+    .name {
+      width: 173px;
+      color: rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 470px;
+      left: 26px;
+      font-family: Inter;
+      font-weight: Extra Light;
+      font-size: 20px;
+      opacity: 1;
+      text-align: center;
+    }
+    .box2 {
+      width: 304px;
+      height: 145px;
+      background: rgba(216, 238, 212, 1);
+      opacity: 1;
+      position: absolute;
+      top: 632px;
+      left: 64px;
+      overflow: hidden;
+    }
+    .quest {
+      width: 173px;
+      color: rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 640px;
+      left: 25px;
+      font-family: Inter;
+      font-weight: Extra Light;
+      font-size: 20px;
+      opacity: 1;
+      text-align: center;
+    }
+    .box1 {
+      width: 304px;
+      height: 54px;
+      background: rgba(0, 144, 39, 1);
+      opacity: 1;
+      position: absolute;
+      top: 797px;
+      left: 64px;
+      overflow: hidden;
+    }
+    .send {
+      width: 173px;
+      color: rgba(255, 255, 255, 1);
+      position: absolute;
+      top: 810px;
+      left: 129px;
+      font-family: Inter;
+      font-weight: Semi Bold;
+      font-size: 24px;
+      opacity: 1;
+      text-align: center;
+    }
+    .box3 {
+      width: 304px;
+      height: 54px;
+      background: rgba(216, 238, 212, 1);
+      opacity: 1;
+      position: absolute;
+      top: 510px;
+      left: 64px;
+      overflow: hidden;
+    }
+    .surn {
+      width: 173px;
+      color: rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 533px;
+      left: 25px;
+      font-family: Inter;
+      font-weight: Extra Light;
+      font-size: 20px;
+      opacity: 1;
+      text-align: center;
+    }
+    .box5 {
+      width: 304px;
+      height: 54px;
+      background: rgba(216, 238, 212, 1);
+      opacity: 1;
+      position: absolute;
+      top: 572px;
+      left: 64px;
+      overflow: hidden;
+    }
+    .email {
+      width: 173px;
+      color: rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 593px;
+      left: 14px;
+      font-family: Inter;
+      font-weight: Extra Light;
+      font-size: 20px;
+      opacity: 1;
+      text-align: center;
+    }
+    .shop {
+      width: 367px;
+      height: 192px;
+      background: url("img/shop.jpeg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 197px;
+      left: 31px;
+      overflow: hidden;
+    }
+  </style>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="barra"></div>
+      <span class="inicio">INICIO</span>
+      <span class="contact">CONTACTOS</span>
+      <span class="prod">PRODUCTOS</span>
+      <div class="bg"></div>
+      <span class="tit">CONTÁCTANOS</span>
+      <div class="logo"></div>
+      <div class="box2"></div>
+      <div class="box1"></div>
+      <div class="box4"></div>
+      <input class="name" type="text" name="name" placeholder="Nombre" />
+      <span class="quest">Pregunta</span>
+      <div class="box3"></div>
+      <span class="send">ENVIAR</span>
+      <span class="surn">Apellidos</span>
+      <div class="box5"></div>
+      <span class="email">Correo</span>
+      <div class="shop"></div>
+      <div class="form-section"></div>
+      <form class="form-register" action="#" method="post">
+        <h4>Contáctanos</h4>
+        <input class="name" type="text" name="name" placeholder="Nombre" />
+        <input class="surn" type="text" name="name" placeholder="Apellido" />
+        <input class="email" type="email" name="Email" placeholder="Correo" />
+        <input
+          class="quest"
+          type="Pregunta"
+          name="mensaje"
+          placeholder="Pregunta"
+          rows="4"
+        />
+        <input class="boton" type="submit" value="Enviar" />
+      </form>
+    </div>
+  </body>
+</html>

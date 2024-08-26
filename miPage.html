@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-size: 14px;
+    }
+    .page {
+      width: 430px;
+      height: 2121px;
+      background: rgba(255, 255, 255, 1);
+      opacity: 1;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .barra {
+      width: 430px;
+      height: 91px;
+      background: url("img/barra.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .inicio {
+      width: 62px;
+      color: rgba(255, 255, 255, 1);
+      position: absolute;
+      top: 32px;
+      left: 88px;
+      font-family: Inter;
+      font-weight: Black;
+      font-size: 18px;
+      opacity: 1;
+      text-align: center;
+    }
+    .contactos {
+      width: 146px;
+      color: rgba(255, 255, 255, 1);
+      position: absolute;
+      top: 32px;
+      left: 280px;
+      font-family: Inter;
+      font-weight: Black;
+      font-size: 18px;
+      opacity: 1;
+      text-align: center;
+    }
+    .products {
+      width: 132px;
+      color: rgba(255, 255, 255, 1);
+      position: absolute;
+      top: 32px;
+      left: 155px;
+      font-family: Inter;
+      font-weight: Black;
+      font-size: 18px;
+      opacity: 1;
+      text-align: center;
+    }
+    .barradown {
+      width: 430px;
+      height: 59px;
+      background: rgba(0, 0, 0, 1);
+      opacity: 1;
+      position: absolute;
+      top: 2062px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .titulo {
+      width: 309px;
+      color: rgba(0, 144, 39, 1);
+      position: absolute;
+      top: 112px;
+      left: 60px;
+      font-family: Inter;
+      font-weight: Black;
+      font-size: 40px;
+      opacity: 1;
+      text-align: center;
+    }
+    .pagename {
+      width: 309px;
+      color: rgba(0, 144, 39, 1);
+      position: absolute;
+      top: 487px;
+      left: 60px;
+      font-family: Inter;
+      font-weight: Black;
+      font-size: 32px;
+      opacity: 1;
+      text-align: center;
+    }
+    .ofertas {
+      width: 327px;
+      color: rgba(0, 144, 39, 1);
+      position: absolute;
+      top: 731px;
+      left: 51px;
+      font-family: Inter;
+      font-weight: Black;
+      font-size: 36px;
+      opacity: 1;
+      text-align: center;
+    }
+    .clubes {
+      width: 327px;
+      color: rgba(0, 144, 39, 1);
+      position: absolute;
+      top: 1445px;
+      left: 51px;
+      font-family: Inter;
+      font-weight: Black;
+      font-size: 36px;
+      opacity: 1;
+      text-align: center;
+    }
+    .logo {
+      width: 69px;
+      height: 69px;
+      background: url("img/logo.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 8px;
+      left: 5px;
+      border-top-left-radius: 107px;
+      border-top-right-radius: 107px;
+      border-bottom-left-radius: 107px;
+      border-bottom-right-radius: 107px;
+      overflow: hidden;
+    }
+    .imagenstart {
+      width: 375px;
+      height: 261px;
+      background: url("img/imagenInicio.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 214px;
+      left: 27px;
+      overflow: hidden;
+    }
+    .descript {
+      width: 391px;
+      color: rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 540px;
+      left: 27px;
+      font-family: Inter;
+      font-weight: Light;
+      font-size: 20px;
+      opacity: 1;
+      text-align: left;
+    }
+    .dBarca {
+      width: 319px;
+      color: rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 1025px;
+      left: 28px;
+      font-family: Inter;
+      font-weight: Bold;
+      font-size: 20px;
+      opacity: 1;
+      text-align: center;
+    }
+    .contacto {
+      width: 118px;
+      color: rgba(255, 255, 255, 1);
+      position: absolute;
+      top: 2077px;
+      left: 4px;
+      font-family: Inter;
+      font-weight: Light;
+      font-size: 24px;
+      opacity: 1;
+      text-align: center;
+    }
+    .kitBarca {
+      width: 186px;
+      height: 216px;
+      background: url("img/Kit Barcelona.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 803px;
+      left: 23px;
+      overflow: hidden;
+    }
+    .priceBarca {
+      width: 82px;
+      color: rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 1077px;
+      left: 75px;
+      font-family: Inter;
+      font-weight: Light;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left;
+    }
+    .chimp {
+      width: 186px;
+      height: 217px;
+      background: url("img/adidas Messi.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 803px;
+      left: 225px;
+      overflow: hidden;
+    }
+    .dChimp {
+      width: 198px;
+      color: rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 1032px;
+      left: 219px;
+      font-family: Inter;
+      font-weight: Bold;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .priceChimp {
+      width: 82px;
+      color: rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 1094px;
+      left: 277px;
+      font-family: Inter;
+      font-weight: Light;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .dcasac {
+      width: 198px;
+      color: rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 1339px;
+      left: 17px;
+      font-family: Inter;
+      font-weight: Bold;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .priceCasac {
+      width: 82px;
+      color: rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 1383px;
+      left: 75px;
+      font-family: Inter;
+      font-weight: Light;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .dshort {
+      width: 198px;
+      color: rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 1342px;
+      left: 219px;
+      font-family: Inter;
+      font-weight: Bold;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .priceshort {
+      width: 82px;
+      color: rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 1403px;
+      left: 277px;
+      font-family: Inter;
+      font-weight: Light;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .casac {
+      width: 186px;
+      height: 211px;
+      background: url("img/Casaca seleccion.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 1116px;
+      left: 23px;
+      overflow: hidden;
+    }
+    .short {
+      width: 186px;
+      height: 211px;
+      background: url("img/short.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 1124px;
+      left: 225px;
+      overflow: hidden;
+    }
+    .barca {
+      width: 1px;
+      height: 1px;
+      background: url("img/Barcelona.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 1667px;
+      left: 254px;
+      overflow: hidden;
+    }
+    .barcelona {
+      width: 410px;
+      height: 170px;
+      background: url("img/Barcelona.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 1505px;
+      left: 10px;
+      overflow: hidden;
+    }
+    .mad {
+      width: 410px;
+      height: 170px;
+      background: url("img/Madrid.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 1687px;
+      left: 10px;
+      overflow: hidden;
+    }
+    .city {
+      width: 410px;
+      height: 166px;
+      background: url("img/City.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 1868px;
+      left: 10px;
+      overflow: hidden;
+    }
+  </style>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>FutSite</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="barra"></div>
+      <span class="inicio">INICIO</span>
+      <a class="contactos" href="contact.html" target="_blank" rel="nofollow">
+        CONTACTOS
+      </a>
+      <span class="products">PRODUCTOS</span>
+      <div class="barradown"></div>
+      <span class="titulo">¡Bienvenido a FutSite!</span>
+      <span class="pagename">FutSite</span>
+      <span class="ofertas">OFERTAS</span>
+      <span class="clubes">CLUBES</span>
+      <div class="logo"></div>
+      <div class="imagenstart"></div>
+      <span class="descript"
+        >Nuestra tienda de FutSite se basa en la venta de productos para
+        aquellos que les apasiona el fútbol. Aquí puedes encontrar camisetas,
+        chimpunes y accesorios que necesitas para alentar a tu equipo favorito o
+        entrenar.</span
+      >
+      <span class="dBarca">FC Barcelona 24/25 Home Kit</span>
+      <a class="contacto" href="contact.html" target="_blank" rel="nofollow">
+        Contactos
+      </a>
+      <div class="kitBarca"></div>
+      <span class="priceBarca">S/ 319.90</span>
+      <div class="chimp"></div>
+      <span class="dChimp"
+        >Chimpunes X Crazyfast Messi League Pasto Sintético</span
+      >
+      <span class="priceChimp">S/ 359.00</span>
+      <div class="casac"></div>
+      <span class="dcasac">CASACA ADICOLOR SELECCIÓN PERUANA</span>
+      <span class="priceCasac">S/ 349.00</span>
+      <div class="short"></div>
+      <span class="dshort"
+        >Shorts de fútbol de training teamLIGA 2 para hombre</span
+      >
+      <span class="priceshort">S/69.30</span>
+      <div class="barca"></div>
+      <div class="barcelona"></div>
+      <div class="mad"></div>
+      <div class="city"></div>
+    </div>
+  </body>
+</html>
